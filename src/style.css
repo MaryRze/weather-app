@@ -1,5 +1,5 @@
 .main {
-  width: 50%;
+  width: 70%;
 }
 
 .has-search .form-control {
@@ -19,18 +19,27 @@
 }
 
 .weather-app-wrapper {
-  max-width: 1000px;
-  margin: 30px auto;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
-.border {
-  width: 50px;
-  height: 50px;
-  margin-right: 5px;
+.my-border {
+  padding: 20px;
+  margin-right: 10px;
 }
 
 .row-padding {
-    padding: 10px;
+  padding: 10px;
+}
+
+.my-card {
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  width: 25%;
+  padding: 20px;
 }
