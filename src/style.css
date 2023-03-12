@@ -21,10 +21,14 @@
 .weather-app-wrapper {
   max-width: 800px;
   margin: 20px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
+
 .my-border {
   padding: 20px;
   margin-right: 10px;
