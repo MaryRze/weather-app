@@ -29,21 +29,6 @@
   border-radius: 5px;
 }
 
-.my-border {
-  padding: 20px;
-  margin-right: 10px;
-}
-
 .row-padding {
   padding: 10px;
-}
-
-.my-card {
-  display: block;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  border: 1px solid white;
-  border-radius: 0.25rem;
-  width: 25%;
-  padding: 20px;
 }
