@@ -52,12 +52,18 @@ li {
   top: 10px;
 }
 
-.units {
-  font-size: 15px;
-  position: relative;
-  bottom: 15px;
-}
-
 .container {
   display: flex;
+}
+
+.units-1 {
+  font-size: 15px;
+  position: absolute;
+  top: 122px; /* adjust the vertical positioning */
+}
+
+.units-2 {
+  font-size: 13px;
+  position: absolute;
+  top: 222px; /* adjust the vertical positioning */
 }
