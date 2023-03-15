@@ -35,8 +35,14 @@
 
 .row-1-icon {
   position: relative;
-  left: 10px;
-  top: 10px;
+  left: 0px;
+  top: 20px;
+}
+
+.units {
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
 }
 
 ul {
