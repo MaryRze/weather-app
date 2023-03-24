@@ -20,8 +20,8 @@
                 <div class="row row-padding">
                     <div class="col-4">
                         <ul>
-                            <li style="font-size: 20px; font-weight: 400;">📌 Tehran</li>
-                            <li style="font-size: 17px; font-weight: 200; line-height: 20px;">Monday 9:25</li>
+                            <li style="font-size: 20px; font-weight: 400;">📌<span id="city"></span></li>
+                            <li style="font-size: 17px; font-weight: 400; line-height: 20px;">Monday 9:25</li>
                         </ul>
                     </div>
                     <div class="col-8">
@@ -37,31 +37,37 @@
                     <div class="col-3" style="max-width: 30rem;">
                         <ul>
 
-                            <li style="font-size: 27px; font-weight: 400;">23 <span class="units-1">
+                            <li style="font-size: 27px; font-weight: 400;"> <span id="temperature"></span> <span
+                                    class="units-1">
                                     ℃|℉</span> <span>
                                 </span></li>
-                            <li style="font-size: 17px; font-weight: 300;">Sunny</li>
+                            <li style="font-size: 14px; font-weight: 400;" id="description"> </li>
                             <li><img src="images/sunny.png" alt="sunny" width="70px" class="row-1-icon"> </li>
 
                         </ul>
                     </div>
                     <div class="col-3" style="max-width: 15rem;">
                         <ul>
-                            <li>Real Feel <img src="images/thermometer.png" alt="real feel" width="50px"></li><br />
+                            <li><span style="font-weight: 350;">Real Feel</span><img src="images/thermometer.png"
+                                    alt="real feel" width="50px"></li><br />
                             <li style="font-size: 20px; font-weight: 400; color: rgba(39,33,66,.4);"><span
-                                    class="temperature">18</span><span class="units-2">℃|℉</span></li>
+                                    class="temperature" id="feelsLike"></span><span class="units-2">℃|℉</span></li>
                         </ul>
                     </div>
                     <div class="col-3" style="max-width: 15rem;">
                         <ul>
-                            <li>Wind <br /> <img src="images/wind.png" alt="wind" width="50px"></li><br />
-                            <li style="font-size: 20px; font-weight: 400; color: rgba(39,33,66,.4);"> 18 km/h</li>
+                            <li><span style="font-weight: 350;">Wind</span><br /> <img src="images/wind.png" alt="wind"
+                                    width="50px"></li><br />
+                            <li style="font-size: 20px; font-weight: 400; color: rgba(39,33,66,.4);"> <span
+                                    id="wind"></span> km/h</li>
                         </ul>
                     </div>
                     <div class="col-3" style="max-width: 15rem;">
                         <ul>
-                            <li>Humidity<img src=" images/humidity.png" alt="humidity" width="50px"></li><br />
-                            <li style="font-size: 20px; font-weight: 400; color: rgba(39,33,66,.4);">65 %</li>
+                            <li><span style="font-weight: 350;">Humidity</span><img src=" images/humidity.png"
+                                    alt="humidity" width="50px"></li><br />
+                            <li style="font-size: 20px; font-weight: 400; color: rgba(39,33,66,.4);"><span
+                                    id="humidity"></span> %</li>
                         </ul>
                     </div>
                 </div>
