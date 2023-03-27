@@ -10,6 +10,7 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  position: relative;
 }
 
 li::first-letter {
@@ -68,11 +69,14 @@ li::first-letter {
 .units-1 {
   font-size: 15px;
   position: absolute;
-  top: 137px; /* adjust the vertical positioning */
+  top:-17px; /* adjust the vertical positioning */
 }
 
 .units-2 {
+  list-style: none;
   font-size: 13px;
   position: absolute;
-  top: 240px; /* adjust the vertical positioning */
+  top: -17px;
+  margin-top: 0px;
+  color: red;
 }
