@@ -24,6 +24,11 @@ li::first-letter {
   padding-left: 2.375rem;
 }
 
+.form-control {
+  width: 500px;
+  max-width: 100%;
+}
+
 .has-search .form-control-feedback {
   position: absolute;
   z-index: 2;
