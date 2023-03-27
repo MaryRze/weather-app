@@ -17,6 +17,10 @@ li::first-letter {
   text-transform: capitalize;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main {
   width: 70%;
 }
@@ -69,14 +73,22 @@ li::first-letter {
 .units-1 {
   font-size: 15px;
   position: absolute;
-  top:-17px; /* adjust the vertical positioning */
+  top: -17px; /* adjust the vertical positioning */
 }
 
 .units-2 {
   list-style: none;
   font-size: 13px;
   position: absolute;
-  top: -17px;
+  top: -15px;
   margin-top: 0px;
-  color: red;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }
