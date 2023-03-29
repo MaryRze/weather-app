@@ -21,31 +21,51 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+    <div class="weather-forecast-date">${day}
+    </div>
+    <img src="images/clear-sky-day.png" alt="" width="45px">
+      <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max">18°</span>
+          <span class="weather-forecast-temperature-min">12°</span>
+      </div>
+  </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   celsiusTemperature = response.data.temperature.current;
 
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
-
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.city;
-
   let descriptionElement = document.querySelector("#description");
-  descriptionElement.innerHTML = response.data.condition.description;
-
   let feelsLikeElement = document.querySelector("#feelsLike");
-  feelsLikeElement.innerHTML = Math.round(response.data.temperature.feels_like);
-
   let windElement = document.querySelector("#wind");
-  windElement.innerHTML = Math.round(response.data.wind.speed);
-
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = Math.round(response.data.temperature.humidity);
-
   let dateElement = document.querySelector("#date");
-  dateElement.innerHTML = formatDate(response.data.time * 1000);
-
   let iconElement = document.querySelector("#icon");
+
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  cityElement.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
+  feelsLikeElement.innerHTML = Math.round(response.data.temperature.feels_like);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  humidityElement.innerHTML = Math.round(response.data.temperature.humidity);
+  dateElement.innerHTML = formatDate(response.data.time * 1000);
   iconElement.setAttribute("src", `images/${response.data.condition.icon}.png`);
   iconElement.setAttribute("alt", response.data.condition.description);
 }
@@ -92,3 +112,5 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
 
 search("Tehran");
+
+displayForecast();
